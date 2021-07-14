@@ -1,18 +1,13 @@
-def grid_traveller(m, n):
-    memo = {"1,1": 1}
-
-    def helper(m, n):
-        if m == 0 or n == 0:
-            return 0
-        key = f"{m},{n}"
-        if key in memo:
-            return memo[key]
-        key = f"{n},{m}"
-        if key in memo:
-            return memo[key]
-        memo[key] = helper(m - 1, n) + helper(m, n - 1)
-        return memo[key]
-
-    return helper(m, n)
-
-print(grid_traveller(18,18))
+memo = {"1,1": 1}
+def gridTraveller(m,n):
+    global memo
+    if m==0 or n==0:
+        return 0
+    cell = f"{m},{n}"
+    if cell in memo:
+        return memo[cell]
+    cell = f"{n},{m}"
+    if cell in memo:
+        return memo[cell]
+    memo[cell] = gridTraveller(m-1,n) + gridTraveller(m,n-1)
+    return memo[cell]
