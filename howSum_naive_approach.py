@@ -7,7 +7,7 @@ def howSum(targetSum, numbers):
     for num in numbers:
         ans = howSum(targetSum-num, numbers)
         if ans != None:
-            ans.append(num)
+            ans = ans + [num]
             return ans
     return None
 
