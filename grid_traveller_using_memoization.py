@@ -11,3 +11,4 @@ def gridTraveller(m,n):
         return memo[cell]
     memo[cell] = gridTraveller(m-1,n) + gridTraveller(m,n-1)
     return memo[cell]
+print(gridTraveller(20,20))
