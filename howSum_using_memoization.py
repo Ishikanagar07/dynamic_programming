@@ -20,3 +20,6 @@ def howSum(targetSum, numbers, memo = None):
 print(howSum(7,[2,3]))
 print(howSum(7, [5,3,4,7]))
 print(howSum(500,[7,8]))
+
+#Time complexity => O(n*m*m)
+#Space complexity => O(m*m)
