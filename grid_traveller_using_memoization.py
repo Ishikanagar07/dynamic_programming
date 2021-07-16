@@ -12,3 +12,7 @@ def gridTraveller(m,n):
     memo[cell] = gridTraveller(m-1,n) + gridTraveller(m,n-1)
     return memo[cell]
 print(gridTraveller(20,20))
+
+
+#Time complexity => O(m*n)
+#Space complexity => O(m+n)
