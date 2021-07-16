@@ -7,3 +7,7 @@ def fib(n):
     return memo[n]
 
 print(fib(50))
+
+
+#Time complexity => O(n)
+#Space complexity => O(n)
