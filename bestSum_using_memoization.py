@@ -23,3 +23,7 @@ def howSum(targetSum, numbers, memo=None):
 
 print(howSum(8,[2,3,5]))
 print(howSum(300, [1,2,5,25]))
+
+
+#Time complexity => O(n^m * m)
+#Space complexity => O(n*m*m)
