@@ -7,3 +7,7 @@ def gridTraveller(row,col):
         return gridTraveller(row-1,col) + gridTraveller(row,col-1)
 
 print(gridTraveller(3,3))
+
+
+#Time complexity => O(2^(m+n))
+#Space complexity => O(m+n)
