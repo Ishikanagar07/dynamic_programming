@@ -4,7 +4,8 @@ def canConstruct(target, wordBank):
     
     for word in wordBank:
         if target.startswith(word):
-            if canConstruct(target[len(word):], wordBank) == True:
+            suffix = target[len(word):]
+            if canConstruct(target[suffix, wordBank) == True:
                 return True
     return False
 
@@ -14,3 +15,4 @@ print(canConstruct("enterapotentpot", ["a", "p", "ent", "enter", "ot", "o", "t"]
 
 #Time complexity => O((n^m)*m)
 #Space complexity => O(m*m) => O(m^2)
+
