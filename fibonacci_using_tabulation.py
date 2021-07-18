@@ -29,3 +29,8 @@ print(fib(6))
 print(fib(7))
 print(fib(8))
 print(fib(50))
+
+
+
+#Time complexity => O(n)
+#Space complexity => O(n)
